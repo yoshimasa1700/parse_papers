@@ -36,7 +36,15 @@ with open(sys.argv[2], 'w') as f:
     nl(f)
     nl(f)
 
+    # write abstract
+    header(f, "abstract", 1)
+    f.write(article_dict["abstract"])
+    nl(f)
+    nl(f)
+
     # write article
+    header(f, "article", 1)
+
     for article in article_dict['sections']:
         header(f, article["heading"], 2)
         f.write(article["text"])
