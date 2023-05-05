@@ -1,6 +1,6 @@
 ## parse_papers
 
-This reposiroty contains easys script for parse pdf paper to markdown.
+This reposiroty contains easy script for parse pdf paper to markdown.
 
 ### setup
 
