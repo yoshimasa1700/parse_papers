@@ -52,6 +52,13 @@ with open(sys.argv[2], 'w') as f:
         nl(f)
         nl(f)
 
+    header(f, 'figures', 2)
+    for fig in article_dict['figures']:
+        header(f, fig['figure_id'])
+        f.write(fig['figure_caption'])
+        nl(f)
+        nl(f)
+
     header(f, 'references', 2)
     # write refs
     for idx, ref in enumerate(article_dict['references']):
